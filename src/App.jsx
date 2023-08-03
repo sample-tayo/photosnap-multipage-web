@@ -8,7 +8,7 @@ import FeatureDetails from "./components/FeatureDetails";
 import { featuredetails } from "./constants/constant";
 
 function App() {
-  const logoSrc = "./src/assets/logo.svg";
+  const logoSrc = "./assets/logo.svg";
 
   return (
     <>
