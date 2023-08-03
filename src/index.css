@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 .imageWrapper {
@@ -16,7 +18,6 @@
   width: 100%;
   height: 30rem;
   cursor: pointer;
-  /* background-image: url("./assets/cityscapes-bb5e02cd.jpg"); */
   background-size: cover;
   background-position: center;
   transition: transform 0.3s, border-bottom 0.3s;
@@ -50,6 +51,26 @@
   transition: all 0.3s;
 }
 
+/* feature details  css */
+
+.features-details-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0rem 6rem;
+  margin: 6rem 0;
+}
+
+.featureDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .imageWrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -59,5 +80,16 @@
 @media (max-width: 640px) {
   .imageWrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* mobile style for details container */
+  .features-details-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 3rem;
+    gap: 3rem;
+    margin: 1rem;
+  }
+  .image-container:hover {
+    border-bottom: 0rem;
+    transform: translateY(0rem);
   }
 }

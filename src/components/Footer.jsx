@@ -5,50 +5,57 @@ import {
   FaFacebook,
   FaLinkedin,
 } from "react-icons/fa";
+import PropTypes from "prop-types";
 import { BsArrowRight } from "react-icons/bs";
 import "../styles/footer.css";
 
-function Footer() {
+function Footer({ logoSrc }) {
   return (
     <footer className="footer">
       <div className="footer-left">
         <div className="social-logo-container">
-          <div className="footer-logo">Logo</div>
+          <div className="footer-logo">
+            <img
+              src={logoSrc}
+              alt="logo"
+              style={{ color: "#fff", fill: "#fff" }}
+            />
+          </div>
           <div className="social-icons">
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="icon" />
+              <FaGithub className="icon" color="#fff" />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter className="icon" />
+              <FaTwitter className="icon" color="#fff" />
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="icon" />
+              <FaInstagram className="icon" color="#fff" />
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="icon" />
+              <FaFacebook className="icon" color="#fff" />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="icon" />
+              <FaLinkedin className="icon" color="#fff" />
             </a>
           </div>
         </div>
@@ -85,3 +92,6 @@ function Footer() {
 }
 
 export default Footer;
+Footer.propTypes = {
+  logoSrc: PropTypes.string.isRequired,
+};

@@ -1,10 +1,10 @@
-// App.js
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "../styles/navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function Navbar({ logoSrc }) {
+  const [menuOpen, setMenuOpen] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -12,19 +12,23 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Logo</div>
-      <div className={`menu ${menuOpen ? "open" : ""}`}>
-        <div className="menu-item">Home</div>
-        <div className="menu-item">About</div>
-        <div className="menu-item">Services</div>
-        <button className="download-button">Download</button>
+      <div className="navbar-logo">
+        <img src={logoSrc} alt="logo" />
       </div>
-      {/* <div className={menuOpen ? "" : "hide"}>
-        <button className="download-button">Download</button>
-      </div> */}
+      <div className={`menu ${menuOpen ? "open" : ""}`}>
+        <div className="menu-item">STORIES</div>
+        <div className="menu-item">FEATURES</div>
+        <div className="menu-item">PRICING</div>
+        <button className="download-btn hidden">GET AN INVITE</button>
+      </div>
+      <button className="download-btn hide">GET AN INVITE</button>
       <div className="menu-icon" onClick={toggleMenu}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
+        {menuOpen ? <FaBars /> : <FaTimes />}
       </div>
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  logoSrc: PropTypes.string.isRequired,
+};
