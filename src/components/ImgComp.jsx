@@ -21,6 +21,7 @@ function ImageWrapper({ title, author, iconColor, backgroundImage }) {
           <BsArrowRight className="arrow-icon" color={iconColor} />
         </div>
       </div>
+      <div className="overlay"></div>
     </div>
   );
 }

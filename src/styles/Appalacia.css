@@ -1,0 +1,47 @@
+.appalacia-container {
+  position: relative;
+  display: inline-block;
+}
+
+.appalacia-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.overlay-text h1 {
+  letter-spacing: 0.3rem;
+  font-size: 2.7rem;
+}
+
+/* .overlay-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 20rem;
+} */
+
+.overlay-text p {
+  font-size: 0.9rem;
+  color: gainsboro;
+}
+.overlay-text-author {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}

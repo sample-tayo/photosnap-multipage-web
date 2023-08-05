@@ -46,7 +46,9 @@ footer {
 .footer-right-text {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
+
 .footer-right-container {
   display: flex;
   flex-direction: column;

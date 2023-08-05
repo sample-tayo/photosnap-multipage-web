@@ -4,7 +4,7 @@ import { homeContent } from "../constants/constant";
 function HomeContent() {
   return (
     <>
-      {homeContent.map((item, index) => (
+      {homeContent.slice(0, 3).map((item, index) => (
         <Item key={index} item={item} />
       ))}
     </>

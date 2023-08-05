@@ -22,7 +22,9 @@ export function Item({ item }) {
         <h4>{title}</h4>
         <p>{text}</p>
         <div className="arrowContainer">
-          <p>{arrowtext}</p>
+          <p>
+            <a href="">{arrowtext}</a>
+          </p>
           <BsArrowRight />
         </div>
       </div>
