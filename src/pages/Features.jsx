@@ -2,6 +2,7 @@ import { Item } from "../components/Item";
 import { homeContent } from "../constants/constant";
 import { featuredetails } from "../constants/constant";
 import FeatureDetails from "../components/FeatureDetails";
+import BetaInvite from "../components/BetaInvite";
 
 function Features() {
   return (
@@ -17,6 +18,7 @@ function Features() {
           />
         ))}
       </div>
+      <BetaInvite />
     </div>
   );
 }

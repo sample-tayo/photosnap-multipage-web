@@ -1,0 +1,151 @@
+/* PricingComponent.css */
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-container span {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 3.5rem 2rem;
+  width: 20rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.plan h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.plan-description {
+  color: gray;
+  opacity: 0.6;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+.month-year {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: gray;
+  opacity: 0.6;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dfdfdf;
+  color: #000;
+}
+
+/* Styles for selected plans */
+.plan.selected {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 640px) {
+  .plans {
+    display: flex;
+    flex-direction: column;
+  }
+  .plan {
+    width: 100%;
+  }
+}

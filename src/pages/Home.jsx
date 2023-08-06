@@ -3,10 +3,9 @@ import HomeContent from "../components/HomeContent";
 import { stories } from "../constants/constant";
 import FeatureDetails from "../components/FeatureDetails";
 import { featuredetails } from "../constants/constant";
-
 function Home() {
   return (
-    <div>
+    <>
       <HomeContent />
       <div className="imageWrapper">
         {stories.slice(0, 4).map((story, index) => (
@@ -28,7 +27,7 @@ function Home() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

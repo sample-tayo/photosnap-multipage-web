@@ -27,7 +27,7 @@ a::before {
   left: 0;
   transition: width 0.5s ease-in-out;
 }
-.active {
+li a > .active {
   color: #ffa500;
 }
 
@@ -110,6 +110,12 @@ a:hover::before {
   align-items: center;
   gap: 1.5rem;
   text-align: center;
+}
+/* pasing this here cause im using it globally */
+.footer-right-text {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {

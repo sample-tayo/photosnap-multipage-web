@@ -56,10 +56,16 @@ export const homeContent = [
     color: "#000",
   },
   {
-    title: "Features",
+    title: "FEATURES",
     text: "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
-    arrowtext: "GET AN INVITE",
-    imgSrc: "./assets/create-and-share.jpg",
+    // arrowtext: "GET AN INVITE",
+    imgSrc: "./assets/hero.jpg",
+  },
+  {
+    title: "PRICING",
+    text: "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
+    // arrowtext: "GET AN INVITE",
+    imgSrc: "./assets/hero.jpg",
   },
 ];
 
@@ -153,3 +159,54 @@ export const appalacia = {
   author: "by John Appleseed",
   text: `The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.`,
 };
+export const plans = [
+  {
+    name: "Basic",
+    description:
+      "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+    monthlyPrice: 19,
+    yearlyPrice: 190,
+    features: ["UNLIMITED STORY POSTING", "UNLIMITED PHOTO UPLOAD"],
+  },
+  {
+    name: "Pro",
+    description:
+      "More advanced features available. Recommended for photography veterans and professionals.",
+    monthlyPrice: 39,
+    yearlyPrice: 390,
+    features: [
+      "UNLIMITED STORY POSTING",
+      "UNLIMITED PHOTO UPLOAD",
+      "EMBEDDING CUSTOM CONTENT",
+      "CUSTOMIZE METADATA",
+      "ADVANCED METRICS",
+    ],
+  },
+  {
+    name: "Business",
+    description:
+      "Additional features available such as more detailed metrics. Recommended for business owners.",
+    monthlyPrice: 99,
+    yearlyPrice: 990,
+    features: [
+      "UNLIMITED STORY POSTING",
+      "UNLIMITED PHOTO UPLOAD",
+      "EMBEDDING CUSTOM CONTENT",
+      "CUSTOMIZE METADATA",
+      "ADVANCED METRICS",
+      "PHOTO DOWNLOADS",
+      "SEARCH ENGINE INDEXING",
+      "CUSTOM ANALYTICS",
+    ],
+  },
+];
+export const planFeatures = [
+  "UNLIMITED STORY POSTING",
+  "UNLIMITED PHOTO UPLOAD",
+  "EMBEDDING CUSTOM CONTENT",
+  "CUSTOMIZE METADATA",
+  "ADVANCED METRICS",
+  "PHOTO DOWNLOADS",
+  "SEARCH ENGINE INDEXING",
+  "CUSTOM ANALYTICS",
+];

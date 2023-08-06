@@ -8,7 +8,6 @@ function Appalacia({ subheading, title, date, author, text }) {
         src="./assets/moon-of-appalacia.jpg"
         alt="Background"
         className="appalacia-image"
-        // height="100%"
       />
       <div className="overlay-text">
         <h6>{subheading}</h6>

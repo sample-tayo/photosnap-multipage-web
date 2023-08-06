@@ -8,6 +8,7 @@ import {
 import PropTypes from "prop-types";
 import { BsArrowRight } from "react-icons/bs";
 import "../styles/footer.css";
+import { NavLink } from "react-router-dom";
 
 function Footer({ logoSrc }) {
   return (
@@ -63,16 +64,16 @@ function Footer({ logoSrc }) {
         <nav className="footer-menu">
           <ul>
             <li>
-              <a href="#">HOME</a>
+              <NavLink to="/">HOME</NavLink>
             </li>
             <li>
-              <a href="#">STORIES</a>
+              <NavLink to="/stories">STORIES</NavLink>
             </li>
             <li>
-              <a href="#">FEATURES</a>
+              <NavLink to="/features">FEATURES</NavLink>
             </li>
             <li>
-              <a href="#">PRICING</a>
+              <NavLink to="/pricing">PRICING</NavLink>
             </li>
           </ul>
         </nav>
