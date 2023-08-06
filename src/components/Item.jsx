@@ -29,7 +29,7 @@ export function Item({ item }) {
         </div>
       </div>
       <div className="homeRight" style={style ? rightStyle : {}}>
-        <img src={imgSrc} alt="" height="100%" width="100%" />
+        <img src={imgSrc} alt="" width="100%" height="100%" />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+const isMobile = window.innerWidth <= 768;
+
 export const featuredetails = [
   {
     title: "100% Responsive",
@@ -59,13 +61,13 @@ export const homeContent = [
     title: "FEATURES",
     text: "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
     // arrowtext: "GET AN INVITE",
-    imgSrc: "./assets/hero.jpg",
+    // imgSrc: "./assets/hero.jpg",
+    imgSrc: isMobile ? "./assets/hero-f.jpg" : "./assets/hero-f.jpg",
   },
   {
     title: "PRICING",
-    text: "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
-    // arrowtext: "GET AN INVITE",
-    imgSrc: "./assets/hero.jpg",
+    text: "Create your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
+    imgSrc: isMobile ? "./assets/hero-m.jpg" : "./assets/hero.jpg",
   },
 ];
 

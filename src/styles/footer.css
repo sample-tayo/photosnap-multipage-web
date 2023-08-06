@@ -42,6 +42,9 @@ footer {
 .footer-menu a:hover {
   color: #ff9900;
 }
+.footer-menu a.active {
+  color: #ff9900;
+}
 
 .footer-right-text {
   display: flex;

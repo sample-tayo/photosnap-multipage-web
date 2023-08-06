@@ -90,10 +90,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     gap: 1rem;
   }
   .beta-text-left {
-    width: 70%;
+    width: 100%;
+    padding: 0;
+    letter-spacing: 0.2rem;
   }
 }

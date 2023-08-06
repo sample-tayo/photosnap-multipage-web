@@ -28,6 +28,9 @@
   letter-spacing: 0.3rem;
   font-size: 2.7rem;
 }
+.overlay-text h6 {
+  letter-spacing: 0.1rem;
+}
 
 /* .overlay-text {
   display: flex;
@@ -44,4 +47,24 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: #fff;
+}
+@media screen and (max-width: 640px) {
+  .appalacia-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .overlay-text {
+    position: relative;
+    top: 0%;
+    left: 0rem;
+    transform: translateY(-0%);
+    color: white;
+    font-size: 18px;
+    padding: 2.5rem 2rem;
+    background-color: #000;
+    width: 100%;
+  }
+  .overlay-text h1 {
+    font-size: 1.7rem;
+  }
 }

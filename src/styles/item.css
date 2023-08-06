@@ -28,6 +28,7 @@
 
 .homeRight {
   flex: 55%;
+  background-color: #000;
 }
 .homeLeft h4 {
   font-weight: 700;

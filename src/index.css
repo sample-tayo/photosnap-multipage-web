@@ -139,4 +139,7 @@ a:hover::before {
     border-bottom: 0rem;
     transform: translateY(0rem);
   }
+  .comparison {
+    padding: 1rem;
+  }
 }
