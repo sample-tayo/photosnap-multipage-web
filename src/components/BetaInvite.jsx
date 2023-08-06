@@ -8,7 +8,7 @@ export default function BetaInvite() {
         <div className="beta-background-image"></div>
         <div className="beta-text-container">
           <div className="beta-text-left">
-            WERE IN BETA. GET YOUR INVITE TODAY!
+            WE&apos;RE IN BETA. GET YOUR INVITE TODAY!
           </div>
           <div className="beta-text-right">
             <div className="footer-right-text">

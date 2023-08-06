@@ -20,13 +20,19 @@ export default function Navbar({ logoSrc }) {
       </div>
       <div className={`menu ${menuOpen ? "open" : ""}`}>
         <div className="menu-item">
-          <NavLink to="/stories"> STORIES </NavLink>
+          <NavLink to="/stories" onClick={toggleMenu}>
+            STORIES
+          </NavLink>
         </div>
         <div className="menu-item">
-          <NavLink to="/features"> FEATURES </NavLink>
+          <NavLink to="/features" onClick={toggleMenu}>
+            FEATURES
+          </NavLink>
         </div>
         <div className="menu-item">
-          <NavLink to="/pricing"> PRICING </NavLink>
+          <NavLink to="/pricing" onClick={toggleMenu}>
+            PRICING
+          </NavLink>
         </div>
         <button className="download-btn hidden">GET AN INVITE</button>
       </div>
