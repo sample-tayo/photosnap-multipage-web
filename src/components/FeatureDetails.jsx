@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-// import "../styles/featuredetails.css";
 
 function FeatureDetails({ title, iconSrc, text }) {
   return (

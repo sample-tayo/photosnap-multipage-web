@@ -7,7 +7,6 @@ function Appalacia({ subheading, title, date, author, text }) {
   return (
     <div className="appalacia-container">
       <img
-        // src="./assets/moon-of-appalacia.jpg"
         src={
           isMobile
             ? "./assets/moon-of-appalacia-m.jpg"

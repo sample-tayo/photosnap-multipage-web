@@ -133,7 +133,7 @@ button:hover {
   color: #000;
 }
 
-/* Styles for selected plans */
+/* Styles for selected plans not yet active  */
 .plan.selected {
   background-color: black;
   color: white;

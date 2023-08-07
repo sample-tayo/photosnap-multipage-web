@@ -49,21 +49,21 @@ function Footer() {
           </div>
           <div className="social-icons">
             <a
-              href="https://github.com"
+              href="https://github.com/sample-tayo"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub className="icon" color="#fff" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://twitter.com/sample_tayo"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaTwitter className="icon" color="#fff" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/sample_tayo"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,7 +77,7 @@ function Footer() {
               <FaFacebook className="icon" color="#fff" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/bolaji-makinde"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -32,13 +32,6 @@
   letter-spacing: 0.1rem;
 }
 
-/* .overlay-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 20rem;
-} */
-
 .overlay-text p {
   font-size: 0.9rem;
   color: gainsboro;

@@ -2,8 +2,6 @@ import Appalacia from "../components/Appalacia";
 import { appalacia } from "../constants/constant";
 import { stories } from "../constants/constant";
 import ImageWrapper from "../components/ImgComp";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
 
 function Stories() {
   return (

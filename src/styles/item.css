@@ -44,12 +44,6 @@
   .homeContentContainer {
     flex-direction: column-reverse;
   }
-
-  /* .homeContentContainer.reverse {
-    grid-template-columns: auto;
-    grid-template-rows: 40% 60%;
-    grid-auto-flow: column-reverse;
-  } */
 }
 
 @media (max-width: 640px) {

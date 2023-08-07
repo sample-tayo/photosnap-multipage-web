@@ -1,5 +1,3 @@
-// import React from "react";
-// import { plans } from "../constants/constant";
 import "../styles/PlansComparison.css";
 import { planFeatures } from "../constants/constant";
 import PropTypes from "prop-types";
@@ -39,7 +37,6 @@ PlanComparison.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       features: PropTypes.arrayOf(PropTypes.string).isRequired,
-      // Add more PropTypes for other plan properties if needed
     })
   ).isRequired,
 };
