@@ -11,12 +11,16 @@ import "../styles/footer.css";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
+  const handleNavLinkClick = (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to the top of the page
+  };
   return (
     <footer className="footer">
       <div className="footer-left">
         <div className="social-logo-container">
           <div className="footer-logo">
-            <NavLink to="/">
+            <NavLink to="/" onClick={handleNavLinkClick}>
               <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
                 <defs>
                   <linearGradient
@@ -40,11 +44,6 @@ function Footer() {
                   <path fill="url(#a)" d="M0 16L9.5 0 19 16z"></path>
                 </g>
               </svg>
-              {/* <img
-              src={logoSrc}
-              alt="logo"
-              style={{ color: "#fff", fill: "#fff" }}
-            /> */}
             </NavLink>
           </div>
           <div className="social-icons">
@@ -89,16 +88,24 @@ function Footer() {
         <nav className="footer-menu">
           <ul>
             <li>
-              <NavLink to="/">HOME</NavLink>
+              <NavLink to="/" onClick={handleNavLinkClick}>
+                HOME
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/stories">STORIES</NavLink>
+              <NavLink to="/stories" onClick={handleNavLinkClick}>
+                STORIES
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/features">FEATURES</NavLink>
+              <NavLink to="/features" onClick={handleNavLinkClick}>
+                FEATURES
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/pricing">PRICING</NavLink>
+              <NavLink to="/pricing" onClick={handleNavLinkClick}>
+                PRICING
+              </NavLink>
             </li>
           </ul>
         </nav>
