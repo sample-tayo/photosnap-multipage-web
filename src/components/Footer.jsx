@@ -11,8 +11,8 @@ import "../styles/footer.css";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
-  const handleNavLinkClick = (event) => {
-    event.preventDefault();
+  const handleNavLinkClick = () => {
+    // event.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to the top of the page
   };
   return (
